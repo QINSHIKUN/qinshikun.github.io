@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Qteam Research Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-content">
+                <div class="nav-left">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">Qteam</span>
+                        <span class="logo-tagline">Research Hub</span>
+                    </a>
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="data.html">Data</a>
+                        <a href="articles.html">Articles</a>
+                        <a href="about.html" class="active">About Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>About Us</h1>
+        </section>
+
+        <section class="profile-section">
+            <div class="profile-card">
+                <div class="profile-header">
+                    <div class="profile-image">
+                        <img src="images/team/xjpic.jpg" alt="Professor Shikun Qin">
+                    </div>
+                    <div class="profile-title">
+                        <h2>Shikun Qin</h2>
+                        <p class="position">Assistant Professor</p>
+                        <p class="department">School of Public Finance and Taxation</p>
+                        <p class="email">shikunqin@foxmail.com</p>
+                    </div>
+                </div>
+
+                <div class="profile-content">
+                    <div class="research-interests">
+                        <h3>Research Interests</h3>
+                        <ul>
+                            <li>Public Policy</li>
+                            <li>Public Procurement</li>
+                            <li>Urban Studies</li>
+                            <li>Government-Enterprise Relations</li>
+                        </ul>
+                    </div>
+
+                    <div class="profile-bio">
+                        <h3>About</h3>
+                        <p>I am dedicated to advancing research in public policy and governance through data-driven approaches. My work focuses on understanding the dynamics between government policies and their practical implementation, particularly in urban development and public procurement systems. I am passionate about promoting open data sharing in social science research, aiming to foster collaborative and efficient academic environments.</p>
+                    </div>
+
+                    <div class="profile-links">
+                        <a href="pdf/CV_SHIKUN QIN.pdf" class="profile-link" target="_blank">
+                            <span class="link-icon">📄</span>
+                            <span class="link-text">Curriculum Vitae</span>
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=auSOhg8AAAAJ&hl=en" class="profile-link" target="_blank">
+                            <span class="link-icon">🎓</span>
+                            <span class="link-text">Google Scholar</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/shikunqin" class="profile-link" target="_blank">
+                            <span class="link-icon">💼</span>
+                            <span class="link-text">LinkedIn</span>
+                        </a>
+                        <a href="https://orcid.org/0000-0001-5039-048X" class="profile-link" target="_blank">
+                            <span class="link-icon">🔍</span>
+                            <span class="link-text">ORCID</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4 class="footer-title">Contact</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="label">Email:</span>
+                        <a href="mailto:shikunqin@foxmail.com">shikunqin@foxmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">Address:</span>
+                        <div class="address-info">
+                            <p>555, Liutai Avenue, Wenjiang District, Chengdu, Sichuan, P. R. China</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Quick Links</h4>
+                <div class="footer-links">
+                    <a href="https://dataverse.harvard.edu/" target="_blank">Harvard Dataverse</a>
+                    <a href="https://data.worldbank.org/" target="_blank">World Bank Data</a>
+                    <a href="https://www.icpsr.umich.edu/" target="_blank">ICPSR</a>
+                    <a href="https://www.ssrn.com/" target="_blank">SSRN</a>
+                    <a href="https://www.nber.org/research/data" target="_blank">NBER Data</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://scholar.google.com/citations?user=auSOhg8AAAAJ&hl=en" target="_blank">Google Scholar</a>
+                    <a href="https://www.linkedin.com/in/shikunqin" target="_blank">LinkedIn</a>
+                    <a href="https://orcid.org/0000-0001-5039-048X" target="_blank">ORCID</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 滚动时改变导航栏样式
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html> 
