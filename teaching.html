@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shikun Qin - Teaching</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        .courses {
+            margin-top: 2rem;
+        }
+        .course {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        .course:last-child {
+            border-bottom: none;
+        }
+        .course-title {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        .course-description {
+            color: var(--light-text);
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-name" data-lang="en">Shikun Qin</a>
+            <div class="nav-links">
+                <a href="index.html" data-lang="en">Home</a>
+                <a href="research.html" data-lang="en">Research</a>
+                <a href="teaching.html" class="active" data-lang="en">Teaching</a>
+                <button id="language-toggle" class="language-toggle">English/中文</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="teaching-content">
+            <h1 class="section-title" data-lang="en">Teaching</h1>
+            <div class="teaching-intro" data-lang="en">
+                I teach at Southwestern University of Finance and Economics (2023-2024). Courses include:
+            </div>
+
+            <div class="courses">
+                <div class="course">
+                    <h2 class="course-title">Public Budgeting and Finance</h2>
+                    <p class="course-description">
+                        This course introduces fundamental concepts and practices in public budgeting and financial management. 
+                        Topics include budget preparation, revenue and expenditure analysis, financial management practices, 
+                        and public sector accounting principles.
+                    </p>
+                </div>
+
+                <div class="course">
+                    <h3 class="course-title" data-lang="en">Study on Tax Theory and Practice</h3>
+                    <p class="course-description" data-lang="en">Comprehensive study of tax theory and its practical applications in modern economies.</p>
+                </div>
+
+                <div class="course">
+                    <h3 class="course-title" data-lang="en">Methods and Applications of Policy Analysis</h3>
+                    <p class="course-description" data-lang="en">Advanced techniques and tools for analyzing public policies and their implementation.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 

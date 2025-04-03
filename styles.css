@@ -1,0 +1,332 @@
+:root {
+    --primary-color: #008080;
+    --gradient-start: #008080;
+    --gradient-middle: #009B9B;
+    --gradient-end: #00B3B3;
+    --button-color: #009B9B;
+    --background-color: #FFFFFF;
+    --text-color: #2C3E50;
+    --light-text: #5D6D7E;
+    --nav-border-color: #7FC7AF;
+    --link-color: #2D6A4F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft YaHei", "微软雅黑", -apple-system, system-ui, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.navbar {
+    background: var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 0.8rem 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-name {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: rgba(255, 255, 255, 0.95);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    padding: 0.3rem 0.5rem;
+    border-radius: 2px;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-links a.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.nav-links a::after {
+    display: none;
+}
+
+.language-toggle {
+    display: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 3.8rem auto 0;
+    padding: 1rem 2rem;
+    min-height: calc(100vh - 3.8rem);
+}
+
+.home-content {
+    display: grid;
+    grid-template-columns: 1.2fr 2.8fr;
+    gap: 4rem;
+    align-items: start;
+    padding: 2rem 2rem 0 0;
+    margin-top: 1rem;
+}
+
+.photo-section {
+    position: relative;
+    padding-top: 1.5rem;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.profile-photo:hover {
+    transform: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.info-section {
+    padding: 2rem 2rem 1rem;
+}
+
+.name {
+    font-family: "Microsoft YaHei", "微软雅黑", -apple-system, system-ui, sans-serif;
+    color: var(--gradient-start);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.title {
+    color: var(--gradient-end);
+    margin-bottom: 1rem;
+}
+
+.affiliation {
+    color: var(--light-text);
+    margin-bottom: 1.5rem;
+}
+
+.affiliation a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.affiliation a:hover {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.introduction {
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.welcome-text {
+    display: inline;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    font-weight: normal;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.4rem;
+    margin: 1.2rem 0;
+}
+
+.btn {
+    width: 100%;
+    text-align: center;
+    background-color: var(--button-color);
+    color: white;
+    padding: 0.4rem 0.5rem;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    opacity: 0.95;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.contact {
+    margin-top: 2rem;
+}
+
+.email {
+    color: var(--light-text);
+}
+
+.email-container {
+    margin: 2rem 0;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.email-text {
+    color: var(--text-color);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.email-text i {
+    color: var(--button-color);
+}
+
+.affiliation a, .introduction a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.affiliation a:hover, .introduction a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 统一的页面内容样式 */
+.section-title {
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    width: fit-content;
+}
+
+.content-section {
+    margin-bottom: 2.5rem;
+}
+
+.subsection-title {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.content-list {
+    margin-left: 1.2rem;
+}
+
+.content-item {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 0.8rem;
+}
+
+.content-item::before {
+    content: "•";
+    position: absolute;
+    left: -0.8rem;
+    color: var(--primary-color);
+}
+
+/* 移除旧的研究页面样式 */
+.research-content,
+.papers,
+.paper,
+.publications,
+.publication,
+.publication-title,
+.publication-authors,
+.publication-venue {
+    all: unset;
+}
+
+@media (max-width: 1200px) {
+    .home-content {
+        grid-template-columns: 1fr 2fr;
+    }
+    
+    .buttons {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-content {
+        grid-template-columns: 1fr;
+        padding: 1rem 0;
+        gap: 2rem;
+    }
+    
+    .buttons {
+        grid-template-columns: 1fr;
+        gap: 0.3rem;
+    }
+
+    .btn {
+        padding: 0.4rem 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .photo-section {
+        text-align: center;
+        padding-top: 0.5rem;
+    }
+
+    .profile-photo {
+        max-width: 400px;
+    }
+
+    .info-section {
+        padding: 0;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links a {
+        margin-right: 0;
+    }
+} 
