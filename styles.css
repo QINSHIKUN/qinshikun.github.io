@@ -177,8 +177,6 @@ a:focus-visible {
 
 .visiting-position {
     max-width: 680px;
-    padding-top: 1rem;
-    border-top: 1px solid var(--line);
     color: var(--muted);
     font-size: 0.94rem;
 }
@@ -304,6 +302,20 @@ a:focus-visible {
 
 .footer-inner a {
     color: var(--muted);
+}
+
+.institution a,
+.profile-links a,
+.footer-inner a {
+    text-decoration: none;
+}
+
+.institution a:hover,
+.profile-links a:hover,
+.footer-inner a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
 }
 
 /* Book */
