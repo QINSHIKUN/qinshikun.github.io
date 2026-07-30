@@ -4,6 +4,7 @@ This is the personal academic website of Shikun Qin.
 
 ## Structure
 - `index.html`: Home page
+- `book.html`: Featured book page
 - `research.html`: Research page
 - `teaching.html`: Teaching page
 - `experience.html`: Academic appointments, education, service, and awards

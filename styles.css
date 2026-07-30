@@ -767,6 +767,318 @@ a:focus-visible {
     background: #f0fbf8;
 }
 
+.inline-book-link {
+    color: var(--primary-dark) !important;
+    font-weight: 500;
+    text-decoration: underline !important;
+    text-decoration-color: #9bcfc4 !important;
+}
+
+.book-hero {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    background:
+        radial-gradient(circle at 78% 20%, rgba(43, 173, 152, 0.24), transparent 34%),
+        linear-gradient(125deg, #062f3c 0%, #075e61 48%, #087f75 100%);
+}
+
+.book-hero::after {
+    content: "";
+    position: absolute;
+    right: -7rem;
+    bottom: -12rem;
+    width: 28rem;
+    height: 28rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+}
+
+.book-hero-inner {
+    position: relative;
+    z-index: 1;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 4.5rem 2rem;
+    display: grid;
+    grid-template-columns: minmax(260px, 0.82fr) minmax(0, 1.7fr);
+    gap: 4.5rem;
+    align-items: center;
+}
+
+.book-cover-wrap {
+    position: relative;
+    width: min(100%, 345px);
+    margin: 0 auto;
+}
+
+.book-cover {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    border-radius: 3px 8px 8px 3px;
+    box-shadow: 0 28px 55px rgba(0, 18, 26, 0.42);
+}
+
+.book-cover-shadow {
+    position: absolute;
+    z-index: 1;
+    top: 4%;
+    right: -7%;
+    width: 100%;
+    height: 94%;
+    border-radius: 6px;
+    background: rgba(0, 21, 29, 0.38);
+    transform: rotate(2.2deg);
+}
+
+.book-eyebrow {
+    color: #9fe1d1;
+}
+
+.book-hero-copy h1 {
+    max-width: 720px;
+    margin-bottom: 0.4rem;
+    font-family: "Lora", Georgia, serif;
+    font-size: clamp(2.3rem, 5vw, 4.25rem);
+    line-height: 1.08;
+    font-weight: 600;
+}
+
+.book-subtitle {
+    margin-bottom: 1.35rem;
+    color: #bce9df;
+    font-family: "Lora", Georgia, serif;
+    font-size: clamp(1.15rem, 2.3vw, 1.65rem);
+}
+
+.book-author {
+    margin-bottom: 1.3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.book-pitch {
+    max-width: 690px;
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 1.03rem;
+    line-height: 1.8;
+}
+
+.book-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 1.7rem 0 2rem;
+}
+
+.book-primary-action,
+.book-secondary-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    padding: 0.72rem 1rem;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.book-primary-action {
+    color: var(--primary-dark);
+    background: #fff;
+}
+
+.book-primary-action:hover {
+    background: #eaf8f4;
+}
+
+.book-secondary-action {
+    color: #fff;
+    background: transparent;
+}
+
+.book-secondary-action:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.book-meta {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.7rem;
+    padding-top: 1.3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.book-meta dt {
+    color: #9fe1d1;
+    font-size: 0.69rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.book-meta dd {
+    margin-top: 0.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.86rem;
+}
+
+.book-page-container {
+    padding-top: 4.5rem;
+}
+
+.book-intro {
+    display: grid;
+    grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+    gap: 4rem;
+    margin-bottom: 4.5rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.book-intro-copy {
+    display: grid;
+    gap: 1rem;
+    color: var(--light-text);
+    font-family: "Lora", Georgia, serif;
+    font-size: 1.03rem;
+    line-height: 1.85;
+}
+
+.book-value-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.85rem;
+}
+
+.book-value-grid article {
+    padding: 1.35rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background: linear-gradient(150deg, #fff, var(--surface-color));
+}
+
+.book-value-grid article > span {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-family: "Lora", Georgia, serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.book-value-grid h3 {
+    margin-bottom: 0.55rem;
+    font-size: 1rem;
+}
+
+.book-value-grid p {
+    color: var(--light-text);
+    font-size: 0.9rem;
+}
+
+.book-contents-section {
+    display: grid;
+    grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+    gap: 4rem;
+    padding: 3rem;
+    border-radius: 14px;
+    background: var(--surface-color);
+}
+
+.book-contents-heading > p:last-child {
+    color: var(--light-text);
+}
+
+.chapter-list {
+    list-style: none;
+    counter-reset: none;
+    border-top: 1px solid var(--border-color);
+}
+
+.chapter-list li {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    gap: 0.7rem;
+    padding: 0.72rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.chapter-list span {
+    color: var(--primary-color);
+    font-size: 0.76rem;
+    font-weight: 600;
+}
+
+.chapter-list p {
+    font-size: 0.93rem;
+}
+
+.book-audience-section {
+    display: grid;
+    grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+    gap: 4rem;
+}
+
+.audience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.8rem;
+}
+
+.audience-grid article {
+    padding: 1.2rem;
+    border-left: 3px solid #8fcfc1;
+    background: var(--surface-color);
+}
+
+.audience-grid i {
+    margin-bottom: 0.85rem;
+    color: var(--primary-color);
+}
+
+.audience-grid h3 {
+    margin-bottom: 0.35rem;
+    font-size: 0.96rem;
+}
+
+.audience-grid p {
+    color: var(--light-text);
+    font-size: 0.86rem;
+}
+
+.book-final-cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 12px;
+    color: #fff;
+    background: linear-gradient(120deg, #063b4a, var(--primary-dark));
+}
+
+.book-final-cta .eyebrow {
+    color: #a9dfd4;
+}
+
+.book-final-cta h2 {
+    margin-bottom: 0.25rem;
+    font-family: "Lora", Georgia, serif;
+    font-size: 1.35rem;
+}
+
+.book-final-cta p {
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 0.9rem;
+}
+
 .site-footer {
     padding: 1.5rem 2rem 2rem;
     color: var(--light-text);
@@ -797,6 +1109,23 @@ a:focus-visible {
     .buttons {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    .book-hero-inner {
+        gap: 2.5rem;
+    }
+
+    .book-value-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .book-meta {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .book-audience-section {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 }
 
 @media (max-width: 700px) {
@@ -812,11 +1141,18 @@ a:focus-visible {
         width: 100%;
         padding-bottom: 0.1rem;
         overflow-x: auto;
-        scrollbar-width: thin;
+        gap: 0.1rem;
+        justify-content: space-between;
+        scrollbar-width: none;
+    }
+
+    .nav-links::-webkit-scrollbar {
+        display: none;
     }
 
     .nav-links a {
-        padding: 0.4rem 0.55rem;
+        padding: 0.36rem 0.3rem;
+        font-size: 0.8rem;
         white-space: nowrap;
     }
 
@@ -840,6 +1176,41 @@ a:focus-visible {
     .conference-list,
     .membership-grid {
         grid-template-columns: 1fr;
+    }
+
+    .book-hero-inner,
+    .book-intro,
+    .book-contents-section,
+    .book-value-grid,
+    .audience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .book-hero-inner {
+        padding: 3rem 1.15rem;
+        gap: 3rem;
+    }
+
+    .book-cover-wrap {
+        width: min(78vw, 330px);
+    }
+
+    .book-hero-copy {
+        text-align: left;
+    }
+
+    .book-intro,
+    .book-contents-section {
+        gap: 1.5rem;
+    }
+
+    .book-contents-section {
+        padding: 1.5rem;
+    }
+
+    .book-final-cta {
+        align-items: flex-start;
+        flex-direction: column;
     }
 
     .home-content {
