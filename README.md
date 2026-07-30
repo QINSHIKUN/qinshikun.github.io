@@ -6,9 +6,11 @@ This is the personal academic website of Shikun Qin.
 - `index.html`: Home page
 - `research.html`: Research page
 - `teaching.html`: Teaching page
+- `experience.html`: Academic appointments, education, service, and awards
 - `styles.css`: Stylesheet
 - `script.js`: JavaScript functions
-- `assets/`: Images and other assets
+- `images/`: Images
+- `pdf/`: Curriculum vitae
 
 ## Deployment
-This website is deployed using GitHub Pages. 
+This website is deployed using GitHub Pages.

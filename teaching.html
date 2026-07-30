@@ -3,78 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teaching - Shikun Qin's Personal Website</title>
-    <meta name="description" content="Shikun Qin's teaching portfolio and courses at Southwestern University of Finance and Economics.">
-    <meta name="keywords" content="Shikun Qin, teaching, courses, public finance, tax theory, policy analysis, SWUFE">
+    <title>Teaching | Shikun Qin</title>
+    <meta name="description" content="Teaching portfolio of Shikun Qin at Southwestern University of Finance and Economics, including public finance and policy analysis.">
+    <meta name="keywords" content="Shikun Qin, teaching, public finance, policy analysis, SWUFE, quantitative methods">
     <meta name="author" content="Shikun Qin">
+    <link rel="canonical" href="https://qinshikun.github.io/teaching.html">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Lora:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        .courses {
-            margin-top: 2rem;
-        }
-        .course {
-            margin-bottom: 1.5rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid #eee;
-        }
-        .course:last-child {
-            border-bottom: none;
-        }
-        .course-title {
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-        }
-        .course-description {
-            color: var(--light-text);
-            margin-bottom: 0.5rem;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&family=Lora:wght@500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Primary navigation">
         <div class="nav-container">
-            <a href="./index.html" class="nav-name">Shikun Qin</a>
+            <a href="index.html" class="nav-name">Shikun Qin</a>
             <div class="nav-links">
-                <a href="./index.html">Home</a>
-                <a href="./research.html">Research</a>
-                <a href="./teaching.html" class="active">Teaching</a>
-                <button id="language-toggle" class="language-toggle">English/中文</button>
+                <a href="index.html">Home</a>
+                <a href="research.html">Research</a>
+                <a href="teaching.html" class="active" aria-current="page">Teaching</a>
+                <a href="experience.html">Experience</a>
             </div>
         </div>
     </nav>
 
-    <main class="container">
-        <div class="teaching-content">
+    <main class="container page-container">
+        <header class="page-header">
+            <p class="eyebrow">Teaching portfolio</p>
             <h1 class="section-title">Teaching</h1>
-            <div class="teaching-intro">
-                I teach at Southwestern University of Finance and Economics. Courses include:
+            <p class="page-lede">
+                At Southwestern University of Finance and Economics, I teach public finance and
+                policy analysis. My teaching connects public-sector institutions and policy problems
+                with transparent empirical reasoning.
+            </p>
+        </header>
+
+        <section class="content-section" aria-labelledby="courses">
+            <div class="section-heading-row">
+                <h2 id="courses" class="subsection-title">Courses taught</h2>
+                <span class="section-note">SWUFE, 2023-2025</span>
             </div>
-
-            <div class="courses">
-                <div class="course">
-                    <h2 class="course-title">Public Budgeting and Finance</h2>
-                    <p class="course-description">
-                        This course introduces fundamental concepts and practices in public budgeting and financial management. 
-                        Topics include budget preparation, revenue and expenditure analysis, financial management practices, 
-                        and public sector accounting principles.
-                    </p>
-                </div>
-
-                <div class="course">
-                    <h2 class="course-title">Study on Tax Theory and Practice</h2>
-                    <p class="course-description">Comprehensive study of tax theory and its practical applications in modern economies.</p>
-                </div>
-
-                <div class="course">
-                    <h2 class="course-title">Methods and Applications of Policy Analysis</h2>
-                    <p class="course-description">Advanced techniques and tools for analyzing public policies and their implementation.</p>
-                </div>
+            <div class="course-grid">
+                <article class="course-card">
+                    <span class="course-number">01</span>
+                    <div>
+                        <h3>Public Finance</h3>
+                        <p>
+                            An introduction to the economic and institutional foundations of government
+                            revenue, expenditure, budgeting, and intergovernmental fiscal relations.
+                        </p>
+                        <div class="topic-tags" aria-label="Public Finance topics">
+                            <span>Revenue</span>
+                            <span>Expenditure</span>
+                            <span>Budgeting</span>
+                            <span>Fiscal institutions</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="course-card">
+                    <span class="course-number">02</span>
+                    <div>
+                        <h3>Methods and Applications of Policy Analysis</h3>
+                        <p>
+                            A problem-centered approach to defining policy questions, evaluating evidence,
+                            selecting analytical tools, and communicating practical recommendations.
+                        </p>
+                        <div class="topic-tags" aria-label="Policy Analysis topics">
+                            <span>Research design</span>
+                            <span>Causal inference</span>
+                            <span>Evidence assessment</span>
+                            <span>Policy communication</span>
+                        </div>
+                    </div>
+                </article>
             </div>
-        </div>
+        </section>
+
+        <section class="content-section split-section" aria-labelledby="approach">
+            <div>
+                <h2 id="approach" class="subsection-title">Teaching approach</h2>
+                <p class="section-copy">
+                    I encourage students to move from a clearly defined public problem to an explicit
+                    theory, an appropriate research design, careful interpretation, and feasible policy
+                    implications. Cases from public procurement, PPP governance, and local public finance
+                    help connect analytical concepts to real administrative choices.
+                </p>
+            </div>
+            <div class="principle-list">
+                <article>
+                    <i class="fas fa-bullseye" aria-hidden="true"></i>
+                    <div><h3>Problem first</h3><p>Begin with a concrete governance or policy question.</p></div>
+                </article>
+                <article>
+                    <i class="fas fa-chart-line" aria-hidden="true"></i>
+                    <div><h3>Evidence aware</h3><p>Match claims to data, methods, and credible identification.</p></div>
+                </article>
+                <article>
+                    <i class="fas fa-comments" aria-hidden="true"></i>
+                    <div><h3>Decision oriented</h3><p>Translate findings into precise, usable policy implications.</p></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section" aria-labelledby="methods">
+            <h2 id="methods" class="subsection-title">Methods and tools</h2>
+            <p class="section-copy narrow-copy">
+                Methods I use in research and bring into methodological discussion and student mentoring include:
+            </p>
+            <div class="skill-cloud">
+                <span>Difference-in-differences</span>
+                <span>Instrumental variables</span>
+                <span>Spatial data analysis</span>
+                <span>Text analysis</span>
+                <span>Social network analysis</span>
+                <span>Agent-based modeling</span>
+                <span>Stata</span>
+                <span>Python</span>
+                <span>ArcGIS</span>
+                <span>Gephi</span>
+            </div>
+        </section>
+
+        <aside class="callout">
+            <div>
+                <p class="eyebrow">Research-informed teaching</p>
+                <h2>Explore the related research</h2>
+                <p>See publications and projects on government procurement, PPPs, and local public finance.</p>
+            </div>
+            <a class="primary-link" href="research.html"><i class="fas fa-arrow-right" aria-hidden="true"></i> Research portfolio</a>
+        </aside>
     </main>
 
+    <footer class="site-footer">
+        <p>&copy; <span data-current-year>2026</span> Shikun Qin. Last updated July 2026.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
