@@ -4,10 +4,10 @@ This is the personal academic website of Shikun Qin.
 
 ## Structure
 - `index.html`: Home page
-- `book.html`: Featured book page
+- `book.html`: Book page
 - `research.html`: Research page
 - `teaching.html`: Teaching page
-- `experience.html`: Academic appointments, education, service, and awards
+- `experience.html`: Web curriculum vitae
 - `styles.css`: Stylesheet
 - `script.js`: JavaScript functions
 - `images/`: Images
