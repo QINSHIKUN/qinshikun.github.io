@@ -390,10 +390,19 @@ a:focus-visible {
     font-size: 0.88rem;
 }
 
-.publisher-link {
+.book-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem 1.25rem;
     margin-top: 1.5rem;
     font-size: 0.92rem;
     font-weight: 600;
+}
+
+.preview-note {
+    margin-top: 0.5rem;
+    color: var(--muted);
+    font-size: 0.83rem;
 }
 
 .contents-list {
