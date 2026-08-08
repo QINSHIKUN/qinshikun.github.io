@@ -193,18 +193,71 @@ a:focus-visible {
     margin-top: 0.9rem;
 }
 
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem 2rem;
+    margin-top: 2rem;
+    padding: 0.35rem 0 0.35rem 0.9rem;
+    border-left: 2px solid #9aabba;
+}
+
+.contact-item {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    margin: 0;
+}
+
+.contact-label {
+    color: var(--muted);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.contact-value {
+    color: var(--ink);
+    font-size: 0.91rem;
+}
+
 .profile-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.45rem 1.25rem;
-    margin-top: 2rem;
-    padding-top: 1.25rem;
-    border-top: 1px solid var(--line);
+    gap: 0.65rem 1.35rem;
+    margin-top: 1.15rem;
 }
 
 .profile-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.42rem;
     font-size: 0.91rem;
     font-weight: 600;
+}
+
+.link-icon {
+    display: inline-grid;
+    width: 1.35rem;
+    height: 1.35rem;
+    place-items: center;
+    flex: 0 0 1.35rem;
+    border: 1px solid #9aabba;
+    border-radius: 0.24rem;
+    color: var(--link);
+    background: #f8fafc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.58rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+
+.profile-links a:hover .link-icon,
+.profile-links a:focus-visible .link-icon {
+    border-color: var(--link);
+    background: #eef4f8;
 }
 
 .page-header {
@@ -294,25 +347,16 @@ a:focus-visible {
     max-width: var(--content-width);
     margin: 0 auto;
     padding: 1.4rem 1.5rem 2.2rem;
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
     font-size: 0.82rem;
 }
 
-.footer-inner a {
-    color: var(--muted);
-}
-
 .institution a,
-.profile-links a,
-.footer-inner a {
+.profile-links a {
     text-decoration: none;
 }
 
 .institution a:hover,
-.profile-links a:hover,
-.footer-inner a:hover {
+.profile-links a:hover {
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 0.18em;
@@ -552,11 +596,10 @@ a:focus-visible {
         margin-top: 2.8rem;
     }
 
-    .footer-inner {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 0.25rem;
+    .contact-details {
+        gap: 0.45rem 1.5rem;
     }
+
 }
 
 @media (max-width: 420px) {
@@ -567,6 +610,11 @@ a:focus-visible {
     .site-container {
         padding-right: 1.1rem;
         padding-left: 1.1rem;
+    }
+
+    .contact-details {
+        align-items: flex-start;
+        flex-direction: column;
     }
 
     .bibliographic-details {
