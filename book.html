@@ -8,25 +8,78 @@
     <meta name="author" content="Shikun Qin">
     <meta name="theme-color" content="#ffffff">
     <link rel="canonical" href="https://qinshikun.github.io/book.html">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <meta property="og:type" content="book">
+    <meta property="og:site_name" content="Shikun Qin">
     <meta property="og:title" content="Public-Private Partnerships in China">
     <meta property="og:description" content="Governance Logic and Policy Implications, by Shikun Qin. Published by Routledge in 2026.">
     <meta property="og:url" content="https://qinshikun.github.io/book.html">
     <meta property="og:image" content="https://qinshikun.github.io/images/%E4%B9%A6%E7%A8%BF%E5%B0%81%E9%9D%A2.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" href="styles.css?v=20260809">
+    <link rel="stylesheet" href="styles.css?v=20260812">
+    <script>
+        (function () {
+            try {
+                var stored = localStorage.getItem("sq-theme");
+                var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+                document.documentElement.setAttribute("data-theme", theme);
+                document.documentElement.classList.add("js");
+            } catch (error) {
+                document.documentElement.setAttribute("data-theme", "light");
+                document.documentElement.classList.add("js");
+            }
+        })();
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": "Public-Private Partnerships in China: Governance Logic and Policy Implications",
+        "author": {
+            "@type": "Person",
+            "name": "Shikun Qin",
+            "url": "https://qinshikun.github.io/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Routledge"
+        },
+        "datePublished": "2026",
+        "inLanguage": "en",
+        "isbn": "978-1-041-32850-6",
+        "numberOfPages": 190,
+        "bookEdition": "First Edition",
+        "url": "https://qinshikun.github.io/book.html",
+        "image": "https://qinshikun.github.io/images/%E4%B9%A6%E7%A8%BF%E5%B0%81%E9%9D%A2.jpg",
+        "sameAs": "https://doi.org/10.4324/9781003784869"
+    }
+    </script>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <nav class="site-nav" aria-label="Primary navigation">
         <div class="nav-inner">
-            <a href="index.html" class="site-name">Shikun Qin</a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="book.html" aria-current="page">My Book</a>
-                <a href="research.html">Research</a>
-                <a href="teaching.html">Teaching</a>
-                <a href="experience.html">CV</a>
+            <a href="index.html" class="site-name">
+                <span class="monogram" aria-hidden="true">SQ</span>
+                <span>Shikun Qin</span>
+            </a>
+            <div class="nav-cluster">
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="book.html" aria-current="page">My Book</a>
+                    <a href="research.html">Research</a>
+                    <a href="teaching.html">Teaching</a>
+                    <a href="experience.html">CV</a>
+                </div>
+                <button type="button" class="theme-toggle" aria-label="Switch to dark theme" aria-pressed="false">
+                    <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4.2"></circle>
+                        <path d="M12 2.4v2.4M12 19.2v2.4M4.2 12H1.8M22.2 12h-2.4M5.6 5.6 4 4M20 20l-1.6-1.6M18.4 5.6 20 4M4 20l1.6-1.6"></path>
+                    </svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20.5 14.3A8.5 8.5 0 1 1 9.7 3.5a6.9 6.9 0 0 0 10.8 10.8Z"></path>
+                    </svg>
+                </button>
             </div>
         </div>
     </nav>
@@ -52,10 +105,10 @@
                 </dl>
 
                 <nav class="book-links" aria-label="Book resources">
-                    <a href="pdf/public-private-partnerships-in-china-preview.pdf" target="_blank" rel="noopener" type="application/pdf">
+                    <a class="button" href="pdf/public-private-partnerships-in-china-preview.pdf" target="_blank" rel="noopener" type="application/pdf">
                         Preview PDF · 36 pages
                     </a>
-                    <a href="https://www.routledge.com/Public-Private-Partnerships-in-China-Governance-Logic-and-Policy-Implications/Qin/p/book/9781041328506" target="_blank" rel="noopener">
+                    <a class="button button--ghost" href="https://www.routledge.com/Public-Private-Partnerships-in-China-Governance-Logic-and-Policy-Implications/Qin/p/book/9781041328506" target="_blank" rel="noopener">
                         Routledge book page
                     </a>
                 </nav>
@@ -113,12 +166,12 @@
                 <p>
                     Selected figures from the book show the institutional framework, market trajectory,
                     implementation structure, spatial diffusion, financing choices, and fiscal controls
-                    examined in the empirical chapters. Use the full-size links to open the original images.
+                    examined in the empirical chapters. Select any figure to enlarge it.
                 </p>
             </div>
 
             <div class="figure-gallery">
-                <figure class="research-figure research-figure--wide">
+                <figure class="research-figure research-figure--wide reveal">
                     <div class="figure-media">
                         <img
                             src="images/book-highlights/ppp-implementation-framework.jpg"
@@ -142,7 +195,7 @@
                     </figcaption>
                 </figure>
 
-                <figure class="research-figure">
+                <figure class="research-figure reveal">
                     <div class="figure-media">
                         <img
                             src="images/book-highlights/market-trajectory-2014-2023.jpg"
@@ -164,7 +217,7 @@
                     </figcaption>
                 </figure>
 
-                <figure class="research-figure">
+                <figure class="research-figure reveal">
                     <div class="paired-figure figure-media">
                         <div class="paired-panel">
                             <img
@@ -202,7 +255,7 @@
                     </figcaption>
                 </figure>
 
-                <figure class="research-figure research-figure--wide">
+                <figure class="research-figure research-figure--wide reveal">
                     <div class="figure-media">
                         <img
                             src="images/book-highlights/policy-collaboration-network.png"
@@ -225,7 +278,7 @@
                     </figcaption>
                 </figure>
 
-                <figure class="research-figure">
+                <figure class="research-figure reveal">
                     <div class="figure-media">
                         <img
                             src="images/book-highlights/spatial-hot-cold-spots-2024.png"
@@ -248,7 +301,7 @@
                     </figcaption>
                 </figure>
 
-                <figure class="research-figure">
+                <figure class="research-figure reveal">
                     <div class="figure-media">
                         <img
                             src="images/book-highlights/infrastructure-financing-2014-2019.jpg"
@@ -271,7 +324,7 @@
                     </figcaption>
                 </figure>
 
-                <figure class="research-figure research-figure--wide">
+                <figure class="research-figure research-figure--wide reveal">
                     <div class="figure-media">
                         <img
                             src="images/book-highlights/ppp-rule-discontinuity.png"
@@ -386,8 +439,19 @@
     <footer class="site-footer">
         <div class="footer-inner">
             <span>&copy; <span data-current-year>2026</span> Shikun Qin</span>
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="mailto:qinsk@swufe.edu.cn">Email</a>
+                <a href="pdf/CV_SHIKUN QIN.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+                <a href="https://scholar.google.com.hk/citations?user=auSOhg8AAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener">Google Scholar</a>
+                <a href="https://orcid.org/0000-0001-5039-048X" target="_blank" rel="noopener">ORCID</a>
+            </nav>
         </div>
     </footer>
-    <script src="script.js?v=20260809"></script>
+
+    <button type="button" class="to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
+    </button>
+
+    <script src="script.js?v=20260812"></script>
 </body>
 </html>

@@ -8,19 +8,83 @@
     <meta name="author" content="Shikun Qin">
     <meta name="theme-color" content="#ffffff">
     <link rel="canonical" href="https://qinshikun.github.io/">
-    <link rel="stylesheet" href="styles.css?v=20260809">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="Shikun Qin">
+    <meta property="og:title" content="Shikun Qin | Public Finance and Public Policy">
+    <meta property="og:description" content="Associate Professor at Southwestern University of Finance and Economics. Research on government procurement, public-private partnerships, and local public finance.">
+    <meta property="og:url" content="https://qinshikun.github.io/">
+    <meta property="og:image" content="https://qinshikun.github.io/images/photo.jpg">
+    <meta name="twitter:card" content="summary">
+    <link rel="preload" as="image" href="images/photo.jpg">
+    <link rel="stylesheet" href="styles.css?v=20260812">
+    <script>
+        (function () {
+            try {
+                var stored = localStorage.getItem("sq-theme");
+                var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+                document.documentElement.setAttribute("data-theme", theme);
+                document.documentElement.classList.add("js");
+            } catch (error) {
+                document.documentElement.setAttribute("data-theme", "light");
+                document.documentElement.classList.add("js");
+            }
+        })();
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Shikun Qin",
+        "url": "https://qinshikun.github.io/",
+        "image": "https://qinshikun.github.io/images/photo.jpg",
+        "jobTitle": "Associate Professor",
+        "email": "mailto:qinsk@swufe.edu.cn",
+        "affiliation": {
+            "@type": "CollegeOrUniversity",
+            "name": "Southwestern University of Finance and Economics",
+            "url": "https://spft.swufe.edu.cn/"
+        },
+        "knowsAbout": [
+            "Government procurement",
+            "Public-private partnerships",
+            "Local public finance",
+            "Government-enterprise relations"
+        ],
+        "sameAs": [
+            "https://scholar.google.com.hk/citations?user=auSOhg8AAAAJ&hl=zh-CN",
+            "https://orcid.org/0000-0001-5039-048X",
+            "https://www.linkedin.com/in/shikunqin",
+            "https://spft.swufe.edu.cn/info/1071/32373.htm"
+        ]
+    }
+    </script>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <nav class="site-nav" aria-label="Primary navigation">
         <div class="nav-inner">
-            <a href="index.html" class="site-name">Shikun Qin</a>
-            <div class="nav-links">
-                <a href="index.html" aria-current="page">Home</a>
-                <a href="book.html">My Book</a>
-                <a href="research.html">Research</a>
-                <a href="teaching.html">Teaching</a>
-                <a href="experience.html">CV</a>
+            <a href="index.html" class="site-name">
+                <span class="monogram" aria-hidden="true">SQ</span>
+                <span>Shikun Qin</span>
+            </a>
+            <div class="nav-cluster">
+                <div class="nav-links">
+                    <a href="index.html" aria-current="page">Home</a>
+                    <a href="book.html">My Book</a>
+                    <a href="research.html">Research</a>
+                    <a href="teaching.html">Teaching</a>
+                    <a href="experience.html">CV</a>
+                </div>
+                <button type="button" class="theme-toggle" aria-label="Switch to dark theme" aria-pressed="false">
+                    <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4.2"></circle>
+                        <path d="M12 2.4v2.4M12 19.2v2.4M4.2 12H1.8M22.2 12h-2.4M5.6 5.6 4 4M20 20l-1.6-1.6M18.4 5.6 20 4M4 20l1.6-1.6"></path>
+                    </svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20.5 14.3A8.5 8.5 0 1 1 9.7 3.5a6.9 6.9 0 0 0 10.8 10.8Z"></path>
+                    </svg>
+                </button>
             </div>
         </div>
     </nav>
@@ -46,8 +110,8 @@
                 </p>
 
                 <nav class="hero-links" aria-label="Featured work">
-                    <a href="book.html">My Book</a>
-                    <a href="research.html">Research</a>
+                    <a class="button" href="book.html">My Book <span class="arrow" aria-hidden="true">→</span></a>
+                    <a class="button button--ghost" href="research.html">Research <span class="arrow" aria-hidden="true">→</span></a>
                 </nav>
 
                 <address class="home-contact" aria-label="Contact information">
@@ -78,24 +142,26 @@
         </section>
 
         <section class="home-priorities" aria-label="Current academic work">
-            <article class="featured-work">
+            <article class="featured-work reveal">
                 <p class="brief-label">Monograph · Routledge · 2026</p>
                 <h2><em>Public-Private Partnerships in China</em></h2>
                 <p>
                     An empirically grounded study of PPP governance, regional diffusion,
                     infrastructure financing, state-owned enterprise participation, and fiscal control.
                 </p>
-                <a class="feature-link" href="book.html">Explore the book, chapter guide, and research highlights</a>
+                <a class="button button--ghost" href="book.html">
+                    Explore the book <span class="arrow" aria-hidden="true">→</span>
+                </a>
             </article>
 
             <div class="home-secondary">
-                <article class="brief-item">
+                <article class="brief-item reveal">
                     <p class="brief-label">Current Research</p>
                     <h2>Digital Transformation of Government Procurement</h2>
                     <p>Principal Investigator · National Natural Science Foundation of China · 2026–2028</p>
                 </article>
 
-                <article class="brief-item">
+                <article class="brief-item reveal">
                     <p class="brief-label">Academic Service</p>
                     <h2>Editorial Board Member</h2>
                     <p><em>Review of Policy Research</em> · 2025–present</p>
@@ -107,8 +173,19 @@
     <footer class="site-footer">
         <div class="footer-inner">
             <span>&copy; <span data-current-year>2026</span> Shikun Qin</span>
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="mailto:qinsk@swufe.edu.cn">Email</a>
+                <a href="pdf/CV_SHIKUN QIN.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+                <a href="https://scholar.google.com.hk/citations?user=auSOhg8AAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener">Google Scholar</a>
+                <a href="https://orcid.org/0000-0001-5039-048X" target="_blank" rel="noopener">ORCID</a>
+            </nav>
         </div>
     </footer>
-    <script src="script.js?v=20260809"></script>
+
+    <button type="button" class="to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
+    </button>
+
+    <script src="script.js?v=20260812"></script>
 </body>
 </html>

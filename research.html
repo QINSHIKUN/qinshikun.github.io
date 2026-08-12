@@ -8,35 +8,86 @@
     <meta name="author" content="Shikun Qin">
     <meta name="theme-color" content="#ffffff">
     <link rel="canonical" href="https://qinshikun.github.io/research.html">
-    <link rel="stylesheet" href="styles.css?v=20260809">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Shikun Qin">
+    <meta property="og:title" content="Research | Shikun Qin">
+    <meta property="og:description" content="Publications, books, and funded research on government procurement, public-private partnerships, and local public finance.">
+    <meta property="og:url" content="https://qinshikun.github.io/research.html">
+    <meta property="og:image" content="https://qinshikun.github.io/images/photo.jpg">
+    <meta name="twitter:card" content="summary">
+    <link rel="stylesheet" href="styles.css?v=20260812">
+    <script>
+        (function () {
+            try {
+                var stored = localStorage.getItem("sq-theme");
+                var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+                document.documentElement.setAttribute("data-theme", theme);
+                document.documentElement.classList.add("js");
+            } catch (error) {
+                document.documentElement.setAttribute("data-theme", "light");
+                document.documentElement.classList.add("js");
+            }
+        })();
+    </script>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <nav class="site-nav" aria-label="Primary navigation">
         <div class="nav-inner">
-            <a href="index.html" class="site-name">Shikun Qin</a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="book.html">My Book</a>
-                <a href="research.html" aria-current="page">Research</a>
-                <a href="teaching.html">Teaching</a>
-                <a href="experience.html">CV</a>
+            <a href="index.html" class="site-name">
+                <span class="monogram" aria-hidden="true">SQ</span>
+                <span>Shikun Qin</span>
+            </a>
+            <div class="nav-cluster">
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="book.html">My Book</a>
+                    <a href="research.html" aria-current="page">Research</a>
+                    <a href="teaching.html">Teaching</a>
+                    <a href="experience.html">CV</a>
+                </div>
+                <button type="button" class="theme-toggle" aria-label="Switch to dark theme" aria-pressed="false">
+                    <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4.2"></circle>
+                        <path d="M12 2.4v2.4M12 19.2v2.4M4.2 12H1.8M22.2 12h-2.4M5.6 5.6 4 4M20 20l-1.6-1.6M18.4 5.6 20 4M4 20l1.6-1.6"></path>
+                    </svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20.5 14.3A8.5 8.5 0 1 1 9.7 3.5a6.9 6.9 0 0 0 10.8 10.8Z"></path>
+                    </svg>
+                </button>
             </div>
         </div>
     </nav>
 
     <main id="main-content" class="site-container page">
         <header class="page-header">
+            <p class="page-kicker">Publications · Books · Funded Projects</p>
             <h1>Research</h1>
             <p>
                 My research examines government procurement, public-private partnerships,
                 local public finance, and government-enterprise relations.
             </p>
             <p class="page-links">
-                <a href="https://scholar.google.com.hk/citations?user=auSOhg8AAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener">Google Scholar</a>
-                · <a href="pdf/CV_SHIKUN QIN.pdf" target="_blank" rel="noopener" type="application/pdf">Curriculum Vitae</a>
+                <a class="button button--ghost" href="https://scholar.google.com.hk/citations?user=auSOhg8AAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener">Google Scholar</a>
+                <a class="button button--ghost" href="pdf/CV_SHIKUN QIN.pdf" target="_blank" rel="noopener" type="application/pdf">Curriculum Vitae</a>
             </p>
         </header>
+
+        <section class="academic-section" aria-labelledby="interests">
+            <h2 id="interests">Interests</h2>
+            <div class="section-content">
+                <ul class="topic-list">
+                    <li>Government procurement</li>
+                    <li>Public-private partnerships</li>
+                    <li>Local public finance</li>
+                    <li>Government-enterprise relations</li>
+                    <li>Infrastructure financing</li>
+                    <li>Fiscal rules and fiscal stress</li>
+                    <li>Policy diffusion</li>
+                </ul>
+            </div>
+        </section>
 
         <section class="academic-section" aria-labelledby="publications">
             <h2 id="publications">Publications</h2>
@@ -45,60 +96,87 @@
                     <h3>International journals</h3>
                     <ul class="publication-list">
                         <li>
-                            <strong>Shikun Qin</strong> and Jerry Zhirong Zhao. “Public-Private or Public-Public?
-                            Exploring Factors Affecting Private Participation in China's PPPs.”
-                            <em>Review of Policy Research</em>, 2025.
-                            <a href="https://doi.org/10.1111/ropr.70001" target="_blank" rel="noopener" aria-label="DOI for Public-Private or Public-Public?">DOI</a>
+                            <span class="pub-year">2025</span>
+                            <span>
+                                <strong>Shikun Qin</strong> and Jerry Zhirong Zhao. “Public-Private or Public-Public?
+                                Exploring Factors Affecting Private Participation in China's PPPs.”
+                                <em>Review of Policy Research</em>.
+                                <a href="https://doi.org/10.1111/ropr.70001" target="_blank" rel="noopener" aria-label="DOI for Public-Private or Public-Public?">DOI</a>
+                            </span>
                         </li>
                         <li>
-                            Weijie Luo, <strong>Shikun Qin</strong>, et al. “From Trade to Tensions:
-                            How Economic Interdependence Shapes Diplomatic Hospitality, 1989–2019.”
-                            <em>The World Economy</em>, 2025.
-                            <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/twec.70040" target="_blank" rel="noopener" aria-label="Article: From Trade to Tensions">Article</a>
+                            <span class="pub-year">2025</span>
+                            <span>
+                                Weijie Luo, <strong>Shikun Qin</strong>, et al. “From Trade to Tensions:
+                                How Economic Interdependence Shapes Diplomatic Hospitality, 1989–2019.”
+                                <em>The World Economy</em>.
+                                <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/twec.70040" target="_blank" rel="noopener" aria-label="Article: From Trade to Tensions">Article</a>
+                            </span>
                         </li>
                         <li>
-                            Sin Lin, <strong>Shikun Qin</strong>, Li Peng, et al. “Assessing Geographic
-                            Barriers to Access Long-Term Services and Supports in Chengdu, China:
-                            A Spatial Accessibility Analysis.”
-                            <em>Sustainability</em>, 2025.
-                            <a href="https://www.mdpi.com/2071-1050/17/7/3222" target="_blank" rel="noopener" aria-label="Article: Assessing Geographic Barriers">Article</a>
+                            <span class="pub-year">2025</span>
+                            <span>
+                                Sin Lin, <strong>Shikun Qin</strong>, Li Peng, et al. “Assessing Geographic
+                                Barriers to Access Long-Term Services and Supports in Chengdu, China:
+                                A Spatial Accessibility Analysis.”
+                                <em>Sustainability</em>.
+                                <a href="https://www.mdpi.com/2071-1050/17/7/3222" target="_blank" rel="noopener" aria-label="Article: Assessing Geographic Barriers">Article</a>
+                            </span>
                         </li>
                         <li>
-                            <strong>Shikun Qin</strong>, Hui Kong, and Jerry Zhirong Zhao. “Spatial Diffusion
-                            of Public-Private Partnership (PPP) in China: A County-Level Analysis.”
-                            <em>Cities</em>, 2024.
-                            <a href="https://doi.org/10.1016/j.cities.2024.104817" target="_blank" rel="noopener" aria-label="DOI for Spatial Diffusion of Public-Private Partnership">DOI</a>
+                            <span class="pub-year">2024</span>
+                            <span>
+                                <strong>Shikun Qin</strong>, Hui Kong, and Jerry Zhirong Zhao. “Spatial Diffusion
+                                of Public-Private Partnership (PPP) in China: A County-Level Analysis.”
+                                <em>Cities</em>.
+                                <a href="https://doi.org/10.1016/j.cities.2024.104817" target="_blank" rel="noopener" aria-label="DOI for Spatial Diffusion of Public-Private Partnership">DOI</a>
+                            </span>
                         </li>
                         <li>
-                            Xiangwen Zheng, Xiaolin Li, and <strong>Shikun Qin</strong>*. “Does Childhood
-                            Traumatic Experience Affect Household Life Insurance Demand in Middle and
-                            Older Ages? Evidence from the 1959–1961 Great Chinese Famine.”
-                            <em>Applied Economics Letters</em>, 2024.
-                            <a href="https://doi.org/10.1080/13504851.2023.2208830" target="_blank" rel="noopener" aria-label="DOI for childhood traumatic experience article">DOI</a>
+                            <span class="pub-year">2024</span>
+                            <span>
+                                Xiangwen Zheng, Xiaolin Li, and <strong>Shikun Qin</strong>*. “Does Childhood
+                                Traumatic Experience Affect Household Life Insurance Demand in Middle and
+                                Older Ages? Evidence from the 1959–1961 Great Chinese Famine.”
+                                <em>Applied Economics Letters</em>.
+                                <a href="https://doi.org/10.1080/13504851.2023.2208830" target="_blank" rel="noopener" aria-label="DOI for childhood traumatic experience article">DOI</a>
+                            </span>
                         </li>
                         <li>
-                            <strong>Shikun Qin</strong> and Weijie Luo. “Exploring Local Government Financing
-                            Strategies in China: A Capital Structure Perspective.”
-                            <em>Public Performance &amp; Management Review</em>, 2022.
-                            <a href="https://doi.org/10.1080/15309576.2022.2095517" target="_blank" rel="noopener" aria-label="DOI for local government financing strategies article">DOI</a>
+                            <span class="pub-year">2022</span>
+                            <span>
+                                <strong>Shikun Qin</strong> and Weijie Luo. “Exploring Local Government Financing
+                                Strategies in China: A Capital Structure Perspective.”
+                                <em>Public Performance &amp; Management Review</em>.
+                                <a href="https://doi.org/10.1080/15309576.2022.2095517" target="_blank" rel="noopener" aria-label="DOI for local government financing strategies article">DOI</a>
+                            </span>
                         </li>
                         <li>
-                            <strong>Shikun Qin</strong>, Weijie Luo, and Yaling Wang. “Policy Uncertainty and
-                            Firm-Level Investment: Evidence from Public-Private Partnership Market in China.”
-                            <em>Applied Economics Letters</em>, 2022.
-                            <a href="https://doi.org/10.1080/13504851.2021.1883524" target="_blank" rel="noopener" aria-label="DOI for policy uncertainty article">DOI</a>
+                            <span class="pub-year">2022</span>
+                            <span>
+                                <strong>Shikun Qin</strong>, Weijie Luo, and Yaling Wang. “Policy Uncertainty and
+                                Firm-Level Investment: Evidence from Public-Private Partnership Market in China.”
+                                <em>Applied Economics Letters</em>.
+                                <a href="https://doi.org/10.1080/13504851.2021.1883524" target="_blank" rel="noopener" aria-label="DOI for policy uncertainty article">DOI</a>
+                            </span>
                         </li>
                         <li>
-                            <strong>Shikun Qin</strong>, Yaling Wang, and Xiaowen Yang. “Policy Innovation
-                            Diffusion and PPP Spatial Distribution.”
-                            <em>China Finance and Economic Review</em>, 2022.
-                            <a href="https://doi.org/10.1515/cfer-2022-0019" target="_blank" rel="noopener" aria-label="DOI for policy innovation diffusion article">DOI</a>
+                            <span class="pub-year">2022</span>
+                            <span>
+                                <strong>Shikun Qin</strong>, Yaling Wang, and Xiaowen Yang. “Policy Innovation
+                                Diffusion and PPP Spatial Distribution.”
+                                <em>China Finance and Economic Review</em>.
+                                <a href="https://doi.org/10.1515/cfer-2022-0019" target="_blank" rel="noopener" aria-label="DOI for policy innovation diffusion article">DOI</a>
+                            </span>
                         </li>
                         <li>
-                            Weijie Luo and <strong>Shikun Qin</strong>*. “China's Local Political Turnover
-                            in the Twenty-First Century.”
-                            <em>Journal of Chinese Political Science</em>, 2021.
-                            <a href="https://doi.org/10.1007/s11366-021-09739-2" target="_blank" rel="noopener" aria-label="DOI for local political turnover article">DOI</a>
+                            <span class="pub-year">2021</span>
+                            <span>
+                                Weijie Luo and <strong>Shikun Qin</strong>*. “China's Local Political Turnover
+                                in the Twenty-First Century.”
+                                <em>Journal of Chinese Political Science</em>.
+                                <a href="https://doi.org/10.1007/s11366-021-09739-2" target="_blank" rel="noopener" aria-label="DOI for local political turnover article">DOI</a>
+                            </span>
                         </li>
                     </ul>
                 </div>
@@ -107,37 +185,55 @@
                     <h3>Chinese-language journals</h3>
                     <ul class="publication-list">
                         <li>
-                            <strong>Shikun Qin</strong> and Haitao Ma. “The Rise of Livelihood Expenditure
-                            in China: Evidence from Tax Reduction Policies.”
-                            <em>China Soft Science (中国软科学)</em>, 2025.
-                            <a href="http://www.cssm.com.cn/ch/reader/view_news.aspx?id=20250305152234001" target="_blank" rel="noopener" aria-label="Article: The Rise of Livelihood Expenditure in China">Article</a>
+                            <span class="pub-year">2025</span>
+                            <span>
+                                <strong>Shikun Qin</strong> and Haitao Ma. “The Rise of Livelihood Expenditure
+                                in China: Evidence from Tax Reduction Policies.”
+                                <em>China Soft Science (中国软科学)</em>.
+                                <a href="http://www.cssm.com.cn/ch/reader/view_news.aspx?id=20250305152234001" target="_blank" rel="noopener" aria-label="Article: The Rise of Livelihood Expenditure in China">Article</a>
+                            </span>
                         </li>
                         <li>
-                            Haitao Ma and <strong>Shikun Qin</strong>*. “Fiscal Rules and Local Government
-                            Behavior.” <em>Modern Economic Science (当代经济科学)</em>, 2023.
-                            <a href="https://jjkx.xjtu.edu.cn/#/digest?ArticleID=1242" target="_blank" rel="noopener" aria-label="Article: Fiscal Rules and Local Government Behavior">Article</a>
+                            <span class="pub-year">2023</span>
+                            <span>
+                                Haitao Ma and <strong>Shikun Qin</strong>*. “Fiscal Rules and Local Government
+                                Behavior.” <em>Modern Economic Science (当代经济科学)</em>.
+                                <a href="https://jjkx.xjtu.edu.cn/#/digest?ArticleID=1242" target="_blank" rel="noopener" aria-label="Article: Fiscal Rules and Local Government Behavior">Article</a>
+                            </span>
                         </li>
                         <li>
-                            Haitao Ma and <strong>Shikun Qin</strong>*. “How Fiscal Stress Affects Local
-                            Welfare Expenditures.” <em>Economic Perspectives (经济学动态)</em>, 2022.
-                            <a href="https://ccfd.cufe.edu.cn/xscxzyjs/info/1004/1351.htm" target="_blank" rel="noopener" aria-label="Record: How Fiscal Stress Affects Local Welfare Expenditures">Record</a>
+                            <span class="pub-year">2022</span>
+                            <span>
+                                Haitao Ma and <strong>Shikun Qin</strong>*. “How Fiscal Stress Affects Local
+                                Welfare Expenditures.” <em>Economic Perspectives (经济学动态)</em>.
+                                <a href="https://ccfd.cufe.edu.cn/xscxzyjs/info/1004/1351.htm" target="_blank" rel="noopener" aria-label="Record: How Fiscal Stress Affects Local Welfare Expenditures">Record</a>
+                            </span>
                         </li>
                         <li>
-                            <strong>Shikun Qin</strong>, Yaling Wang, and Xiaowen Yang. “Policy Innovation
-                            Diffusion and PPP Spatial Distribution.”
-                            <em>Finance &amp; Trade Economics (财贸经济)</em>, 2021.
-                            <a href="https://cmjj.ajcass.com/Magazine/Show?ID=89334" target="_blank" rel="noopener" aria-label="Article: Policy Innovation Diffusion and PPP Spatial Distribution">Article</a>
+                            <span class="pub-year">2021</span>
+                            <span>
+                                <strong>Shikun Qin</strong>, Yaling Wang, and Xiaowen Yang. “Policy Innovation
+                                Diffusion and PPP Spatial Distribution.”
+                                <em>Finance &amp; Trade Economics (财贸经济)</em>.
+                                <a href="https://cmjj.ajcass.com/Magazine/Show?ID=89334" target="_blank" rel="noopener" aria-label="Article: Policy Innovation Diffusion and PPP Spatial Distribution">Article</a>
+                            </span>
                         </li>
                         <li>
-                            <strong>Shikun Qin</strong>. “Risk Identification of Urban Fiscal Stress in China.”
-                            <em>Journal of Central University of Finance &amp; Economics (中央财经大学学报)</em>, 2020.
-                            <a href="https://xbbjb.cufe.edu.cn/CN/Y2020/V0/I10/10" target="_blank" rel="noopener" aria-label="Article: Risk Identification of Urban Fiscal Stress in China">Article</a>
+                            <span class="pub-year">2020</span>
+                            <span>
+                                <strong>Shikun Qin</strong>. “Risk Identification of Urban Fiscal Stress in China.”
+                                <em>Journal of Central University of Finance &amp; Economics (中央财经大学学报)</em>.
+                                <a href="https://xbbjb.cufe.edu.cn/CN/Y2020/V0/I10/10" target="_blank" rel="noopener" aria-label="Article: Risk Identification of Urban Fiscal Stress in China">Article</a>
+                            </span>
                         </li>
                         <li>
-                            Yue Liu, <strong>Shikun Qin</strong>, and Yingzi Jia. “Reflections on China's
-                            PPP Information Disclosure Mechanism.”
-                            <em>Fiscal Science (财政科学)</em>, 2020.
-                            <a href="https://czkx.cbpt.cnki.net/WKG/WebPublication/paperDigest.aspx?paperID=6dca2ac3-97ce-4a4a-9ac0-fb98245b90cc" target="_blank" rel="noopener" aria-label="Article: Reflections on China's PPP Information Disclosure Mechanism">Article</a>
+                            <span class="pub-year">2020</span>
+                            <span>
+                                Yue Liu, <strong>Shikun Qin</strong>, and Yingzi Jia. “Reflections on China's
+                                PPP Information Disclosure Mechanism.”
+                                <em>Fiscal Science (财政科学)</em>.
+                                <a href="https://czkx.cbpt.cnki.net/WKG/WebPublication/paperDigest.aspx?paperID=6dca2ac3-97ce-4a4a-9ac0-fb98245b90cc" target="_blank" rel="noopener" aria-label="Article: Reflections on China's PPP Information Disclosure Mechanism">Article</a>
+                            </span>
                         </li>
                     </ul>
                     <p class="publication-note">* Corresponding author.</p>
@@ -199,8 +295,19 @@
     <footer class="site-footer">
         <div class="footer-inner">
             <span>&copy; <span data-current-year>2026</span> Shikun Qin</span>
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="mailto:qinsk@swufe.edu.cn">Email</a>
+                <a href="pdf/CV_SHIKUN QIN.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+                <a href="https://scholar.google.com.hk/citations?user=auSOhg8AAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener">Google Scholar</a>
+                <a href="https://orcid.org/0000-0001-5039-048X" target="_blank" rel="noopener">ORCID</a>
+            </nav>
         </div>
     </footer>
-    <script src="script.js?v=20260809"></script>
+
+    <button type="button" class="to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
+    </button>
+
+    <script src="script.js?v=20260812"></script>
 </body>
 </html>
