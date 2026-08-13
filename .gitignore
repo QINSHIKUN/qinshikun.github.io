@@ -1,0 +1,16 @@
+# Local tooling
+.claude/
+
+# Windows / OS junk
+desktop.ini
+Thumbs.db
+ehthumbs.db
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+
+# Editable source documents — only the PDF is published
+*.docx
+*.doc
+~$*
