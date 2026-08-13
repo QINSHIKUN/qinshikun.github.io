@@ -1,5 +1,6 @@
 # Local tooling
 .claude/
+publish.ps1
 
 # Windows / OS junk
 desktop.ini
