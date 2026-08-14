@@ -1234,7 +1234,7 @@ hr {
 
 .book-atlas-layout {
     display: grid;
-    grid-template-columns: minmax(300px, 0.86fr) minmax(0, 1.64fr);
+    grid-template-columns: minmax(390px, 1.12fr) minmax(0, 1.38fr);
     gap: clamp(2rem, 4vw, 4rem);
     align-items: start;
 }
