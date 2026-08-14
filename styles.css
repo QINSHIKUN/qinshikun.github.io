@@ -1232,6 +1232,124 @@ hr {
     scroll-margin-top: 6rem;
 }
 
+.book-atlas-layout {
+    display: grid;
+    grid-template-columns: minmax(300px, 0.86fr) minmax(0, 1.64fr);
+    gap: clamp(2rem, 4vw, 4rem);
+    align-items: start;
+}
+
+.book-atlas-layout > .book-chapters-panel {
+    min-width: 0;
+    order: 1;
+    display: block;
+}
+
+.book-atlas-layout > .book-figures {
+    min-width: 0;
+    order: 2;
+}
+
+.book-atlas-layout .book-chapters-panel > h2 {
+    position: static;
+    margin-bottom: 1.25rem;
+}
+
+.book-atlas-layout .book-chapters-panel .section-content {
+    max-width: none;
+}
+
+.book-atlas-layout .book-section-header {
+    margin-bottom: 1.2rem;
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+}
+
+.book-atlas-layout .book-section-header p {
+    font-size: 0.86rem;
+    line-height: 1.6;
+}
+
+.book-atlas-layout .figure-index {
+    margin: 0 0 clamp(2.4rem, 5vw, 3.5rem);
+}
+
+.book-atlas-layout .figure-chapters {
+    gap: clamp(3rem, 6vw, 4.5rem);
+}
+
+.book-atlas-layout .figure-chapter-heading {
+    margin-bottom: 1rem;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.35rem 1rem;
+}
+
+.book-atlas-layout .figure-chapter-heading h3 {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+}
+
+.book-atlas-layout .figure-gallery {
+    gap: 1rem;
+}
+
+.book-atlas-layout .research-figure {
+    padding: 0.6rem;
+}
+
+.book-atlas-layout .figure-media {
+    margin-bottom: 0.65rem;
+}
+
+.book-atlas-layout .research-figure figcaption {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.2rem 0.75rem;
+}
+
+.book-atlas-layout .research-figure figcaption .figure-label {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.book-atlas-layout .research-figure figcaption strong {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    font-size: 0.98rem;
+}
+
+.book-atlas-layout .research-figure figcaption > .full-size-link,
+.book-atlas-layout .research-figure figcaption .figure-link-row {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.book-atlas-layout .chapter-list {
+    gap: 0.55rem;
+}
+
+.book-atlas-layout .chapter-list summary {
+    padding: 0.9rem;
+}
+
+.book-atlas-layout .chapter-title {
+    font-size: 1rem;
+}
+
+.book-atlas-layout .chapter-abstract {
+    padding: 0.9rem;
+}
+
+.book-atlas-layout .chapter-abstract p {
+    font-size: 0.82rem;
+    line-height: 1.62;
+}
+
+.book-atlas-layout .book-source-note {
+    padding: 0.95rem;
+    font-size: 0.76rem;
+}
+
 .figure-index {
     margin: -0.45rem 0 clamp(3.4rem, 7vw, 5.5rem) 15rem;
     display: flex;
@@ -1299,9 +1417,17 @@ hr {
 }
 
 .figure-gallery {
+    width: 100%;
+    max-width: 1040px;
+    margin-inline: auto;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: clamp(1.2rem, 2.5vw, 2rem);
+}
+
+.figure-gallery--single {
+    max-width: 580px;
+    grid-template-columns: minmax(0, 1fr);
 }
 
 .research-figure {
@@ -1323,8 +1449,8 @@ hr {
 }
 
 .research-figure--wide {
-    grid-column: 1 / -1;
-    padding: clamp(0.8rem, 2vw, 1.2rem);
+    grid-column: auto;
+    padding: clamp(0.65rem, 1.7vw, 1rem);
     display: flex;
     flex-direction: column;
 }
@@ -1344,10 +1470,9 @@ hr {
 
 .research-figure--wide .figure-media {
     margin-bottom: 0.9rem;
-    aspect-ratio: auto;
+    aspect-ratio: 4 / 3;
 }
 
-.research-figure--wide .figure-media img,
 .paired-figure img {
     height: auto;
 }
@@ -1723,6 +1848,17 @@ hr {
 }
 
 /* --- 9. Responsive ------------------------------------------ */
+
+@media (max-width: 1080px) {
+    .book-atlas-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0;
+    }
+
+    .book-atlas-layout .book-chapters-panel .section-content {
+        max-width: 74ch;
+    }
+}
 
 @media (max-width: 900px) {
     .home-hero {
