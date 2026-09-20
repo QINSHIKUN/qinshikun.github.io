@@ -18,12 +18,24 @@
   dubious ownership。已写进全局 gitconfig，换仓库或重装可能复现。
 - 推送后 Pages 重建要 1–2 分钟，`curl -sIL <文件URL>` 看 Content-Length 变没变。
 
-## 只发 PDF 版简历
+## 简历：这里只有成品 PDF，源在别处（2026-09-19 起改 LaTeX）
 
-`pdf/CV_SHIKUN QIN.pdf`。`.docx` 等可编辑源已被 .gitignore 挡掉，**不要提交**——
-这是公开仓库，传上去等于公开可编辑版简历。
+```
+源      C:\AI\work\me\简历\CV-en\cv.tex          ← 要改简历改这个，不在本仓库
+构建    C:\AI\work\me\简历\CV-en\build.ps1        ← 编译并把 PDF 复制到下面这个路径
+成品    pdf/CV_SHIKUN QIN.pdf                     ← index/experience/book 三个页面链它
+```
 
-推送前确认 `git status` 里没有本该被忽略的文件。
+**不要在本仓库里改简历**，这里的 PDF 是构建产物，手改会被下次构建覆盖。
+源放在 `C:\AI` 私有仓库是因为本仓库公开，可编辑源传上去等于公开可编辑版简历；
+PDF 放这里是因为三个页面用相对路径链它，成品必须物理在这个目录。
+指路牌与改法见 `work\me\简历\README.md`。
+
+**只发 PDF**：`.docx` / `.tex` 等可编辑源已被 .gitignore 挡掉，**不要提交**。
+2026-09-19 之前的 Word 版已废弃，在 `.claude\_todelete\pdf\`。
+
+流程：① 改 `cv.tex`；② 跑 `build.ps1`（它会把 PDF 送过来）；③ 提交并推送，
+**推送＝公开发布，只有 Jesse 本人做**。推送前确认 `git status` 里没有本该被忽略的文件。
 
 ## 目录
 
