@@ -25,6 +25,7 @@ window.SQ_TRANSLATIONS = Object.freeze({
     "Beijing Bridata Technology Co., Ltd.": "北京明树数据科技有限公司",
     "I study government procurement, public-private partnerships, local public finance, and government-enterprise relations.": "我的研究聚焦政府采购、政府和社会资本合作、地方公共财政与政企关系。",
     "Email": "邮箱",
+    "Website": "业务网站",
     "Curriculum Vitae": "个人简历",
     "Institutional Profile": "院校主页",
     "Monograph · Routledge · 2026": "学术专著 · Routledge · 2026",
